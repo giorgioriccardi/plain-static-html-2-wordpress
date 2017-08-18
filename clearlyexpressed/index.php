@@ -1,40 +1,15 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
+<?php
+/**
+ * Template Name: Home
+ * @package WordPress
+ * @subpackage Clearly_Expressed
+ * @since Clearly Expressed 1.0
+ */
 
-	<head>
-		<title>Translation Services - This gives you an overview of our services as well as other useful information about language services for English, German, French and Italian.</title>
-		<meta name="description" content="This gives you an overview of our services as well as other useful information about language services for English, German, French and Italian.">
-		<meta name="keywords" content="Translations, Interpreting, German, English, French, Italian">
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<meta name="language" content="english">
-		<meta name="author" content="Giorgio Riccardi &amp; Alessandro Franceschetti">
-		<link rel="shortcut icon" href="/favicon.ico">
+get_header();
+?>
 
-		<?php wp_head(); ?>
 
-	</head>
-
-	<body>
-		<div id="wrapper">
-			<div id='header-menu'>
-				<div id="menu">
-					<ul>
-						<li class="oben"><a href="index.html" class="aktiv">Home</a></li>
-						<li><a href="about-us.htm">About Us</a></li>
-						<li><a href="services.htm">Services</a></li>
-						<li><a href="prices.htm">Prices</a></li>
-						<li><a href="contact.htm">Contact</a></li>
-					</ul>
-				</div>
-				<div id="toggle">
-					<a href="index.html">English</a> | <a href="https://www.sageundschreibe.eu/index.html" class="aktiv">German</a>
-				</div>
-			</div>
-
-			<div id="header" class="start">
-				<!-- <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/header-start.jpg" hspace="250" alt="50" title="Clearly Expressed Translations: say what you mean."> -->
-				<div id="logo"></div>
-			</div>
 			<div id="content">
 				<div id='leftbar'>
 					<h3>Annette Frischmann</h3>
@@ -120,38 +95,7 @@
 
 				</div>
 			</div>
-			<div id="footer">
-				<div class="left">
-					<p>&copy; 2017 Clearly Expressed Translations</p>
-				</div>
-				<div class="right">
-					<a href="http://www.iubenda.com/privacy-policy/308195" class="iubenda-white iubenda-embed" title="Privacy Policy">Privacy Policy</a>
-					<script type="text/javascript">
-						(function(w, d) {
-							var loader = function() {
-								var s = d.createElement("script"),
-									tag = d.getElementsByTagName("script")[0];
-								s.src = "http://cdn.iubenda.com/iubenda.js";
-								tag.parentNode.insertBefore(s, tag);
-							};
-							if (w.addEventListener) {
-								w.addEventListener("load", loader, false);
-							} else if (w.attachEvent) {
-								w.attachEvent("onload", loader);
-							} else {
-								w.onload = loader;
-							}
-						})(window, document);
-					</script>
-				</div>
-				<div class="right">
-					<p><a href="credits_webdesign.htm">Credits</a></p>
-				</div>
-			</div>
-		</div>
 
-		<?php wp_footer(); ?>
-
-	</body>
-
-</html>
+<?php
+get_footer();
+?>
