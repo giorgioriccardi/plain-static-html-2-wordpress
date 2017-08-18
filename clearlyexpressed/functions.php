@@ -26,7 +26,11 @@
  		load_theme_textdomain( 'clearlyexpressed', get_template_directory() . '/languages' );
 
  		// Create Navigation MENU
- 		register_nav_menu( 'primary', esc_html__( 'Primary Menu', 'clearlyexpressed' ) );
+ 	// 	register_nav_menu( 'primary', __( 'Main Menu', 'clearlyexpressed' ) );
+    register_nav_menus( array(
+    	'primary' => 'Main Menu',
+    	'footer_menu' => 'Footer Menu',
+    ) );
 
  		/*
  		 * Let WordPress manage the document title.

@@ -22,15 +22,21 @@
 	<body>
 		<div id="wrapper">
 			<div id='header-menu'>
-				<div id="menu">
-					<ul>
-						<li class="oben"><a href="index.html" class="aktiv">Home</a></li>
-						<li><a href="about-us.htm">About Us</a></li>
-						<li><a href="services.htm">Services</a></li>
-						<li><a href="prices.htm">Prices</a></li>
-						<li><a href="contact.htm">Contact</a></li>
-					</ul>
-				</div>
+				<?php
+					/**
+					 * Displays a navigation menu.
+					 *
+					 * @since 3.0.0
+					 */
+					$defaults = array(
+						'theme_location' => 'Main Menu',
+						'container' => 'div',
+						'menu_class' => '',
+						'menu_id' => 'menu'
+					);
+
+					wp_nav_menu( $defaults );
+				?>
 				<div id="toggle">
 					<a href="index.html">English</a> | <a href="https://www.sageundschreibe.eu/index.html" class="aktiv">German</a>
 				</div>
