@@ -9,24 +9,8 @@
 		<meta name="language" content="english">
 		<meta name="author" content="Giorgio Riccardi &amp; Alessandro Franceschetti">
 		<link rel="shortcut icon" href="/favicon.ico">
-		<link href="style.css" rel="stylesheet" type="text/css">
-		<link href="normalize.css" rel="stylesheet" type="text/css">
-		<link rel="stylesheet" type="text/css" href="ie.css" />
 
-		<script type="text/javascript">
-			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', 'UA-27954893-3']);
-			_gaq.push(['_trackPageview']);
-
-			(function() {
-				var ga = document.createElement('script');
-				ga.type = 'text/javascript';
-				ga.async = true;
-				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-				var s = document.getElementsByTagName('script')[0];
-				s.parentNode.insertBefore(ga, s);
-			})();
-		</script>
+		<?php wp_head(); ?>
 
 	</head>
 
@@ -48,7 +32,7 @@
 			</div>
 
 			<div id="header" class="start">
-				<!-- <img src="images/slogan.png" hspace="250" alt="50" title="Clearly Expressed Translations: say what you mean."> -->
+				<!-- <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/header-start.jpg" hspace="250" alt="50" title="Clearly Expressed Translations: say what you mean."> -->
 				<div id="logo"></div>
 			</div>
 			<div id="content">
@@ -165,6 +149,9 @@
 				</div>
 			</div>
 		</div>
+
+		<?php wp_footer(); ?>
+
 	</body>
 
 </html>
