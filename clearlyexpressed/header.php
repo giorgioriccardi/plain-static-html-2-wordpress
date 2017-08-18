@@ -1,18 +1,23 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
+<?php
+/**
+ * The header for our theme.
+ *
+ * This is the template that displays all of the <head> section and everything up until <div id="content">
+ *
+ * @link    https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package Clearly Expressed
+ */
 
-	<head>
-		<title>Translation Services - This gives you an overview of our services as well as other useful information about language services for English, German, French and Italian.</title>
-		<meta name="description" content="This gives you an overview of our services as well as other useful information about language services for English, German, French and Italian.">
-		<meta name="keywords" content="Translations, Interpreting, German, English, French, Italian">
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<meta name="language" content="english">
-		<meta name="author" content="Giorgio Riccardi &amp; Alessandro Franceschetti">
-		<link rel="shortcut icon" href="/favicon.ico">
+?><!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<head>
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="<?php echo esc_url( home_url( '/' ) ); ?>favicon.ico">
 
-		<?php wp_head(); ?>
-
-	</head>
+	<?php wp_head(); ?>
+</head>
 
 	<body>
 		<div id="wrapper">

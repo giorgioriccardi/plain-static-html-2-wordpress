@@ -1,7 +1,7 @@
 <?php
 /**
  * Template Name: Prices
- * @package WordPress
+ * @package Clearly Expressed
  * @subpackage Clearly_Expressed
  * @since Clearly Expressed 1.0
  */

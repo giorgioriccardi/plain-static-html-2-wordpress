@@ -1,7 +1,7 @@
 <?php
 /**
  * Template Name: Services
- * @package WordPress
+ * @package Clearly Expressed
  * @subpackage Clearly_Expressed
  * @since Clearly Expressed 1.0
  */
