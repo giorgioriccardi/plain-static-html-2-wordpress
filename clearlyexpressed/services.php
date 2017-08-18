@@ -1,3 +1,11 @@
+<?php
+/**
+ * Template Name: Services
+ * @package WordPress
+ * @subpackage Clearly_Expressed
+ * @since Clearly Expressed 1.0
+ */
+?>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>

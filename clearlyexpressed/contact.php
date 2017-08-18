@@ -1,5 +1,14 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
+<?php
+/**
+ * Template Name: Contact
+ * @package WordPress
+ * @subpackage Clearly_Expressed
+ * @since Clearly Expressed 1.0
+ */
+?>
+
+	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+	<html>
 
 	<head>
 		<title>Please contact Annette Frischmann and Denise Lachmann for further information.</title>
