@@ -29,7 +29,7 @@
  	// 	register_nav_menu( 'primary', __( 'Main Menu', 'clearlyexpressed' ) );
     register_nav_menus( array(
     	'primary' => 'Main Menu',
-    	'footer_menu' => 'Footer Menu',
+    	'secondary' => 'Footer Menu',
     ) );
 
  		/*

@@ -29,7 +29,7 @@
    * @since 3.0.0
    */
   $defaults = array(
-    'theme_location' => 'Footer Menu',
+    'theme_location' => 'secondary',
     'container' => 'div',
     'menu_class' => '',
     'menu_id' => 'footer_menu'

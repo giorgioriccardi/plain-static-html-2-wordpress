@@ -29,7 +29,7 @@
 					 * @since 3.0.0
 					 */
 					$defaults = array(
-						'theme_location' => 'Main Menu',
+						'theme_location' => 'primary',
 						'container' => 'div',
 						'menu_class' => '',
 						'menu_id' => 'menu'
