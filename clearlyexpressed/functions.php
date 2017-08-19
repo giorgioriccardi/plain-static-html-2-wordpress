@@ -70,7 +70,7 @@
 // Load styles and scripts
 
 function clearlyexpressed_scripts(){
-  wp_enqueue_style( 'main', get_stylesheet_directory_uri() . '/css/style.css' );
+  wp_enqueue_style( 'main', get_stylesheet_directory_uri() . '/style.css' );
 
   wp_enqueue_script( 'jquery' );
   wp_enqueue_script( 'main', get_stylesheet_directory_uri() . '/js/main.js', $deps = array('jquery'), $ver = false, $in_footer = true );

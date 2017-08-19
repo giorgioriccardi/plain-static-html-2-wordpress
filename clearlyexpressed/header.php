@@ -9,7 +9,7 @@
  * @package Clearly Expressed
  */
 
-?><!DOCTYPE html>
+?><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">

@@ -13,3 +13,15 @@ Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-rea
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+
+@import url('../clearlyexpressed/css/style.css');
+
+/*Style Changes 2017*/
+
+#header-menu .menu-item {
+  list-style: none;
+}
+
+.current-menu-item a {
+  color: #90A3B7 !important;
+}
