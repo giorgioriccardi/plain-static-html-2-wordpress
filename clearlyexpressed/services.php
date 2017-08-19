@@ -80,7 +80,7 @@
                 <p>This form of interpreting is being used for translating single sentences or short paragraphs between two or more people into the target language. No conference technology is being used. It is applicable for meetings between only a few participants.</p>
              	<p><strong>Are you looking for one of the above services?</strong>
 				<br>We are pleased to submit an offer for your individual needs.
-			  <br>Please <a href="contact.htm">contact us</a> here.</p>
+			  <br>Please <a href="contact">contact us</a> here.</p>
 			</div>
 
 	<!--	<div id="sidebar">

@@ -14,6 +14,12 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<!--
+		I don't really want to apply a theme favicon to any website using this theme;
+		so I use the root path of the website instead of the theme, if it has a favicon on it's own it's fine
+	-->
 	<link rel="shortcut icon" href="<?php echo esc_url( home_url( '/' ) ); ?>favicon.ico">
 
 	<?php wp_head(); ?>

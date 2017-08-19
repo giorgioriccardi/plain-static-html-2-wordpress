@@ -1,101 +1,62 @@
 <?php
 /**
- * Template Name: Home
+ * Template Name: Blog
+ *
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query.
+ * E.g., it puts together the home page when no home.php file exists.
+ *
+ * @link https://codex.wordpress.org/Template_Hierarchy
  * @package Clearly Expressed
  * @subpackage Clearly_Expressed
  * @since Clearly Expressed 1.0
  */
 
-get_header();
-?>
+ get_header(); ?>
 
+ 	<div id="primary" class="content-area">
+ 		<main id="main" class="site-main" role="main">
 
-			<div id="content">
-				<div id='leftbar'>
-					<h3>Annette Frischmann</h3>
+ 		<?php if ( have_posts() ) : ?>
 
-					<h2>My Services</h2>
+ 			<?php if ( is_home() && ! is_front_page() ) : ?>
+ 				<header>
+ 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+ 				</header>
+ 			<?php endif; ?>
 
-					<ul>
-						<li>Translations of General Texts</li>
-						<li>Health and Rehabilitation Medicine</li>
-						<li>Contracts</li>
-						<li>Business Correspondence</li>
-						<li>Marketing Material</li>
-						<li>Website Contents</li>
-						<li>Business Proposals</li>
-						<li>Technical Manuals</li>
-						<li>Brochures and Flyers etc.</li>
-					</ul>
+ 			<?php /* Start the Loop */ ?>
+ 			<?php while ( have_posts() ) : the_post(); ?>
 
-					<h2>I offer Translations for the Languages</h2>
-					<ul>
-						<li>German-English</li>
-						<li>English-German</li>
-						<li>French-English</li>
-						<li>French-German</li>
-						<li>Italian-English</li>
-					</ul>
+ 				<?php
+ 					// Is this the first post of the front page?
+ 					$first_post = $wp_query->current_post == 0 && !is_paged() && is_front_page();
+ 					/*
+ 					 * Include the Post-Format-specific template for the content.
+ 					 * If you want to override this in a child theme, then include a file
+ 					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+ 					 */
+ 					if ( $first_post == true ) {
+ 						get_template_part( 'template-parts/content', 'single' );
+ 					} else {
+ 						get_template_part( 'template-parts/content', get_post_format() );
+ 					}
 
-					<h2>Qualifications and other Information</h2>
-					<ul>
-						<li>Master Degree in Applied Linguistics and Cultural Studies. English, German and French.<br></li>
+ 				?>
 
-					</ul>
-					<h4><a href="about-us.htm" title="About us" target="_self">more...</a></h4>
-				</div>
-				<div id="inhalt">
-					<h1>Say what you mean.</h1>
-					<div id="titel" class="start"></div>
-					<h2>Your Needs are our Priority.</h2>
-					<p>Welcome to Clearly Expressed Translation Services – your intercontinental language services team in Canada and Germany!</p>
+ 			<?php endwhile; ?>
 
-					<p>This gives you an overview of our translation and interpretation services as well as some useful information regarding language services in general. No matter whether you are looking for a translator to translate your business documents, your website,
-						your user manual or your personal documents such as driver’s license, marriage certificate or immigration documents from German into English or vice versa – you have found the right people to work for you. We are also offering interpretation services
-						from German into English and vice versa for specific events – please <a href="contact.htm">send us</a> your request. We will gladly answer your questions.</p>
-					<p>If you are looking for a team to take care of the preparations for your multilingual congress in North America or Europe, the Clearly Expressed translation experts will gladly assist you. We are not only experts of the English, German and French
-						language – we can also help you to make the necessary culturally relevant adaptations in order for you to communicate successfully with your (potential) business partners abroad. Please get into contact with us and we will put together an overview
-						of what we can offer to serve your specific needs and requests.</p>
-					<p>We are located in Vancouver, BC, Canada, and Frankfurt, Germany, but are also offering our services in other countries depending on the needs and requests of our customers. Collaborating closely with our colleagues for other language combinations,
-						we can provide you with professional services not only in English, German and French but also Italian, Portuguese and Spanish. Whether orally or in written form, whether in Canada or abroad, your specific needs and requests are the center around
-						which we are tailoring our services to optimally serve your needs. </p>
-					<p>Learn more <a href="about-us.htm">about us</a>, our <a href="services.htm">translation</a> and <a href="services.htm">interpretation</a> services in more detail and our <a href="prices.htm">prices</a>. Or <a href="contact.htm">contact us</a> directly:</p>
-					<p>Ph: <a href="tel:+1 604 329 9622">+1 604 329 9622</a>
-						<br>E-Mail: <a href="mailto:info@clearlyexpressed.ca">info@clearlyexpressed.ca</a></p>
-					<p>We are looking forward to serving you!</p>
-				</div>
-				<div id="sidebar">
-					<h3>Denise Lachmann</h3>
+ 			<?php posts_nav_link(); ?>
 
-					<h2>My Services</h2>
+ 		<?php else : ?>
 
-					<ul>
-						<li>Simultaneous Interpreting</li>
-						<li>Consecutive Interpreting</li>
-						<li>Whispered Interpreting</li>
-						<li>Conference Interpreting</li>
-						<li>General Translations</li>
-						<li>Certified Document Translations (for Germany)</li>
-					</ul>
+ 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
-					<h2>I offer Translations and Interpretations for the Languages</h2>
-					<ul>
-						<li>German-English</li>
-						<li>English-German</li>
-						<li>French-English</li>
-						<li>French-German</li>
-					</ul>
+ 		<?php endif; ?>
 
-					<h2>Qualifications and other Information</h2>
-					<ul>
-						<li>Master Degree in Applied Linguistics and Cultural Studies. English, German and French.<br></li>
+ 		</main><!-- #main -->
+ 	</div><!-- #primary -->
 
-					</ul>
-					<h4><a href="about-us.htm" title="About us" target="_self">more...</a></h4>
-
-				</div>
-			</div>
-
-<?php
-get_footer();
-?>
+ <?php get_sidebar(); ?>
+ <?php get_footer(); ?>

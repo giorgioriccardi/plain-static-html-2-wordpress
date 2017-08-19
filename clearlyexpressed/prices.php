@@ -33,11 +33,11 @@
 					<li>Costs for copyright in case of recording</li>
                     <li>Organization or consulting fees</li>
 				</ul>
-                <p><a href="contact.htm">Contact us</a> - we will be pleased to submit a non-binding offer to you free of charge and on the basis of your request and the information you provide us with.</p>
+                <p><a href="contact">Contact us</a> - we will be pleased to submit a non-binding offer to you free of charge and on the basis of your request and the information you provide us with.</p>
 			</div>
             <div id="sidebar">
 		    <h2>Affordable Rates</h2>
-				<p>Compared to other companies in the Vancouver area, our pricing is one of the most competitive in the translation industry. Our rates for translations start from $35.00 per document, depending on the size and complexity of the content. <p>We do not have any hidden charges and never change the price once it has been given as long as the source material stays the same.</p> <p>For a detailed quote, please <a href="contact.htm">contact us</a>.</p>
+				<p>Compared to other companies in the Vancouver area, our pricing is one of the most competitive in the translation industry. Our rates for translations start from $35.00 per document, depending on the size and complexity of the content. <p>We do not have any hidden charges and never change the price once it has been given as long as the source material stays the same.</p> <p>For a detailed quote, please <a href="contact">contact us</a>.</p>
 
 			</div>
      <!--

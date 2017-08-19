@@ -80,7 +80,7 @@
 				<p><span class="red">…</span> because the success of your project or event is what we are focusing on.
 				<br><span class="red">…</span> because we are professional translators and interpreters.
 				<br><span class="red">…</span> because our ambition pushes us to always find the formulation that the speaker or author would have used in the target language.</p>
-				<p><b>For more detailed information about the team of Clearly Expressed Translations, please  <a href="contact.htm">contact us</a>. We will be pleased to provide you with more information on our qualifications.</b></p>
+				<p><b>For more detailed information about the team of Clearly Expressed Translations, please  <a href="contact">contact us</a>. We will be pleased to provide you with more information on our qualifications.</b></p>
 			</div>
 		  <div id="sidebar">
 		    <h3>Denise Lachmann</h3>
