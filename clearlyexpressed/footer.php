@@ -22,21 +22,6 @@
     <p><a href="credits.htm">Credits</a></p>
   </div>
 </div>
-<?php
-  /**
-   * Displays a navigation menu.
-   *
-   * @since 3.0.0
-   */
-  $defaults = array(
-    'theme_location' => 'secondary',
-    'container' => 'div',
-    'menu_class' => '',
-    'menu_id' => 'footer_menu'
-  );
-
-  wp_nav_menu( $defaults );
-?>
 </div>
 
 <?php wp_footer(); ?>
