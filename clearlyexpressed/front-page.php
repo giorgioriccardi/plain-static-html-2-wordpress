@@ -6,30 +6,26 @@
  * @since Clearly Expressed 1.0
  */
 
-get_header();
-?>
+ get_header();
+ ?>
 
-	<div id="content">
-		<?php if (have_posts()) : ?>
+ 	<div id="content">
+    <?php get_sidebar( $name = "Left Sidebar" ); ?>
+ 		<?php if (have_posts()) : ?>
 
-			<?php while (have_posts()) : the_post(); ?>
+ 			<?php while (have_posts()) : the_post(); ?>
 
-				<?php // content
+ 				<?php // content
 
-				 	the_content();
+ 				 	the_content();
 
-				?>
+ 				?>
 
-			<?php endwhile; ?>
+ 			<?php endwhile; ?>
 
-				<?php // Navigation ?>
-
-			<?php else : ?>
-
-				<?php // No Posts Found ?>
-
-		<?php endif; ?>
-	</div> <!-- end of #content -->
+ 		<?php endif; ?>
+    <?php get_sidebar( $name = "Right Sidebar" ); ?>
+ 	</div> <!-- end of #content -->
 
 				<div id='leftbar'>
 					<h3>Annette Frischmann</h3>
