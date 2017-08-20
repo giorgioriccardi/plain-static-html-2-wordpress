@@ -17,8 +17,7 @@ $first_post = $wp_query->current_post == 0 && !is_paged() && is_home();
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 <h3>Note of the theme's Author:</h3>
-<h4>This Blog section is not implemented and it probably won't
-<br>The original site did not have any blogging need nor capability</h4>
+<h4>This section is not implemented and it probably won't!</h4>
 
 	<header class="entry-header">
 		<?php

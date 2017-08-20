@@ -12,7 +12,9 @@
 ?><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html <?php language_attributes(); ?>>
 <head>
+	<title><?php bloginfo( "name" ); ?></title>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta name="description" content="<?php bloginfo("description"); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
@@ -27,6 +29,9 @@
 
 	<body>
 		<div id="wrapper">
+			<div class="logo">
+				<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+			</div>
 			<div id='header-menu'>
 				<?php
 					/**
