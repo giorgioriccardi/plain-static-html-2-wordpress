@@ -9,29 +9,25 @@
  get_header();
  ?>
 
-		<div id="content">
+ 	<div id="content">
+    <?php get_sidebar( $name = "Left Sidebar" ); ?>
+ 		<?php if (have_posts()) : ?>
 
-			<div id="inhalt">
-		    <h1>Credits</h1>
-				<div id="titel" class="impressum"></div>
-				<h2>Webdesign</h2>
-				<p><strong><a href="https://www.giorgioriccardi.com/" target="_blank">Giorgio Riccardi</a> &amp; <a href="https://www.seatoskywebsolutions.ca/" target="_blank">Alessandro Franceschetti</a></strong>
-				<br>Web Designers</p>
-				<p>Vancouver and Turin
-				<br>
-				Canada and Italy</p>
-				<p>Ph: +1 778 230 5057
-				<br>E-Mail: <a href="mailto:giorgio@griccardi.com">giorgio@griccardi.com</a>
-                <br>E-Mail: <a href="mailto:franceschetti.alessandro@gmail.com">franceschetti.alessandro@gmail.com</a></p>
-				<p>&nbsp;</p>
-				<p>&nbsp;</p>
-				<p>&nbsp;</p>
-				<p>&nbsp;</p>
-				<p>&nbsp;</p>
-				<p>&nbsp;</p>
-				<p>&nbsp;</p>
-<p>&nbsp;</p>
-			</div>
+ 			<?php while (have_posts()) : the_post(); ?>
+
+ 				<?php // content
+
+ 				 	the_content();
+
+ 				?>
+
+ 			<?php endwhile; ?>
+
+ 		<?php endif; ?>
+    <?php get_sidebar( $name = "Right Sidebar" ); ?>
+ 	</div> <!-- end of #content -->
+
+
 			<div id="sidebar-contacts-webdesign">
 		    <h2>Webdesign</h2>
 				<p><strong>Giorgio Riccardi

@@ -9,13 +9,23 @@
  get_header();
  ?>
 
-		<div id="content">
+ 	<div id="content">
+    <?php get_sidebar( $name = "Left Sidebar" ); ?>
+ 		<?php if (have_posts()) : ?>
 
-			<div id="inhalt">
-		    <h1>Thank You!</h1>
-				<p>Thank you for your message. We will contact you shortly.</p>
-				<br><p>You will be automatically redirected to our homepage in 5 seconds.</p>
-			</div>
+ 			<?php while (have_posts()) : the_post(); ?>
+
+ 				<?php // content
+
+ 				 	the_content();
+
+ 				?>
+
+ 			<?php endwhile; ?>
+
+ 		<?php endif; ?>
+    <?php get_sidebar( $name = "Right Sidebar" ); ?>
+ 	</div> <!-- end of #content -->
 
 			<div id="sidebar">
 		    <h2>Frischmann &amp; Lachmann</h2>
@@ -23,6 +33,5 @@
 				<br>E-Mail: <a href="mailto:info@clearlyexpressed.ca">info@clearlyexpressed.ca</a></p>
 
 			</div>
-		</div>
 
 <?php get_footer(); ?>

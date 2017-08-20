@@ -16,7 +16,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 @import url('../clearlyexpressed/css/style.css');
 
-/*Style Changes 2017*/
+/* Style Changes 2017 */
+
+
+/* menu */
 
 #header-menu .menu-item {
   list-style: none;
@@ -24,4 +27,15 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 .current-menu-item a {
   color: #90A3B7 !important;
+}
+
+
+/* sidebars */
+
+aside#primary {
+  float: left;
+}
+
+aside#secondary {
+  float: right;
 }
