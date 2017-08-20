@@ -9,7 +9,8 @@
  * @package Clearly Expressed
  */
 
-?><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+?><!DOCTYPE html>
+<!-- <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> -->
 <html <?php language_attributes(); ?>>
 <head>
 	<title><?php bloginfo( "name" ); ?></title>
@@ -48,12 +49,12 @@
 
 					wp_nav_menu( $defaults );
 				?>
-				<div id="toggle">
-					<a href="index.html">English</a> | <a href="https://www.sageundschreibe.eu/index.html" class="aktiv">German</a>
-				</div>
 			</div>
 
 			<div id="header" class="start">
-				<!-- <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/header-start.jpg" hspace="250" alt="50" title="Clearly Expressed Translations: say what you mean."> -->
-				<div id="logo"></div>
+				<?php if ( get_header_image() ) : ?>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+					<img src="<?php header_image(); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="">
+				</a>
+				<?php endif; // End header image check. ?>
 			</div>

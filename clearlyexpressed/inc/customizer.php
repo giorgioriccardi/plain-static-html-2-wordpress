@@ -1,8 +1,8 @@
 <?php
 /**
- * popper Theme Customizer.
+ * clearlyexpressed Theme Customizer.
  *
- * @package popper
+ * @package clearlyexpressed
  */
 
 /**
@@ -10,7 +10,7 @@
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
-function popper_customize_register( $wp_customize ) {
+function clearlyexpressed_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
@@ -32,7 +32,7 @@ function popper_customize_register( $wp_customize ) {
 		new WP_Customize_Color_Control(
 			$wp_customize,
 			'link_color', array(
-				'label' => __( 'Header Background Color', 'popper' ),
+				'label' => __( 'Header Background Color', 'clearlyexpressed' ),
 				'section' => 'colors',
 				'settings' => 'header_color'
 			)
@@ -41,12 +41,12 @@ function popper_customize_register( $wp_customize ) {
 
 
 	// Add option to select sidebar position
-	$wp_customize->add_section( 'popper_options',
+	$wp_customize->add_section( 'clearlyexpressed_options',
 		array(
-			'title' => __( 'Theme Options', 'popper' ),
+			'title' => __( 'Theme Options', 'clearlyexpressed' ),
 //			'priority' => 95,
 			'capability' => 'edit_theme_options',
-			'description' => __( 'Change the default display options for the theme.', 'popper' )
+			'description' => __( 'Change the default display options for the theme.', 'clearlyexpressed' )
 		)
 	);
 
@@ -55,35 +55,35 @@ function popper_customize_register( $wp_customize ) {
 		array(
 			'default' => 'no-sidebar',
 			'type' => 'theme_mod',
-			'sanitize_callback' => 'popper_sanitize_layout', // Sanitization function appears further down
+			'sanitize_callback' => 'clearlyexpressed_sanitize_layout', // Sanitization function appears further down
 			'transport' => 'postMessage'
 		)
 	);
 
 	// Add the controls
-	$wp_customize->add_control(	'popper_layout_control',
+	$wp_customize->add_control(	'clearlyexpressed_layout_control',
 		array(
 			'type' => 'radio',
-			'label' => __( 'Sidebar position', 'popper' ),
-			'section' => 'popper_options',
+			'label' => __( 'Sidebar position', 'clearlyexpressed' ),
+			'section' => 'clearlyexpressed_options',
 			'choices' => array(
-				'no-sidebar' => __( 'No sidebar (default)', 'popper' ),
-				'sidebar-left' => __( 'Left sidebar', 'popper' ),
-				'sidebar-right' => __( 'Right sidebar', 'popper' )
+				'no-sidebar' => __( 'No sidebar (default)', 'clearlyexpressed' ),
+				'sidebar-left' => __( 'Left sidebar', 'clearlyexpressed' ),
+				'sidebar-right' => __( 'Right sidebar', 'clearlyexpressed' )
 			),
 			'settings' => 'layout_setting' // Matches setting ID from above
 		)
 	);
 }
-add_action( 'customize_register', 'popper_customize_register' );
+add_action( 'customize_register', 'clearlyexpressed_customize_register' );
 
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
-function popper_customize_preview_js() {
-	wp_enqueue_script( 'popper_customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20130508', true );
+function clearlyexpressed_customize_preview_js() {
+	wp_enqueue_script( 'clearlyexpressed_customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20130508', true );
 }
-add_action( 'customize_preview_init', 'popper_customize_preview_js' );
+add_action( 'customize_preview_init', 'clearlyexpressed_customize_preview_js' );
 
 
 
@@ -94,7 +94,7 @@ add_action( 'customize_preview_init', 'popper_customize_preview_js' );
  * apply the default (no-sidebar).
  */
 
-function popper_sanitize_layout( $value ) {
+function clearlyexpressed_sanitize_layout( $value ) {
     if ( ! in_array( $value, array( 'sidebar-left', 'sidebar-right', 'no-sidebar' ) ) )
         $value = 'no-sidebar';
 
@@ -105,7 +105,7 @@ function popper_sanitize_layout( $value ) {
  * Inject Customizer CSS when appropriate
  */
 
-function popper_customize_css() {
+function clearlyexpressed_customize_css() {
 
 	$header_color = get_theme_mod('header_color');
 
@@ -164,4 +164,4 @@ function popper_customize_css() {
 	<?php
 	}
 }
-add_action( 'wp_head', 'popper_customize_css');
+add_action( 'wp_head', 'clearlyexpressed_customize_css');

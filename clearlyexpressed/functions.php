@@ -61,7 +61,7 @@
       }
       return $classes;
     }
-    add_filter( nav_menu_css_class, 'custom_current_menu_item_class', $priority = 10, $accepted_args = 2 );
+    add_filter( 'nav_menu_css_class', 'custom_current_menu_item_class', $priority = 10, $accepted_args = 2 );
 
     /**
      * Register widget area.
@@ -112,29 +112,6 @@
     add_action( 'widgets_init', 'clearlyexpressed_widgets_init' );
 
     /**
-     * Replaces "[...]" (appended to automatically generated excerpts) with ... and
-     * a 'Continue reading' link.
-     *
-     * @since Clearly Expressed 1.0
-     *
-     * @param string $link Link to single post/page.
-     * @return string 'Continue reading' link prepended with an ellipsis.
-     */
-    function clearlyexpressed_excerpt_more( $link ) {
-    	if ( is_admin() ) {
-    		return $link;
-    	}
-
-    	$link = sprintf( '<p class="link-more"><a href="%1$s" class="more-link">%2$s</a></p>',
-    		esc_url( get_permalink( get_the_ID() ) ),
-    		/* translators: %s: Name of current post */
-    		sprintf( __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'clearlyexpressed' ), get_the_title( get_the_ID() ) )
-    	);
-    	return ' &hellip; ' . $link;
-    }
-    add_filter( 'excerpt_more', 'clearlyexpressed_excerpt_more' );
-
-    /**
      * Handles JavaScript detection.
      *
      * Adds a `js` class to the root `<html>` element when JavaScript is detected.
@@ -145,35 +122,6 @@
     	echo "<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>\n";
     }
     add_action( 'wp_head', 'clearlyexpressed_javascript_detection', 0 );
-
-    /**
-     * Register custom fonts.
-     */
-    function clearlyexpressed_fonts_url() {
-    	$fonts_url = '';
-
-    	/*
-    	 * Translators: If there are characters in your language that are not
-    	 * supported by Libre Franklin, translate this to 'off'. Do not translate
-    	 * into your own language.
-    	 */
-    	$libre_franklin = _x( 'on', 'Libre Franklin font: on or off', 'clearlyexpressed' );
-
-    	if ( 'off' !== $libre_franklin ) {
-    		$font_families = array();
-
-    		$font_families[] = 'Libre Franklin:300,300i,400,400i,600,600i,800,800i';
-
-    		$query_args = array(
-    			'family' => urlencode( implode( '|', $font_families ) ),
-    			'subset' => urlencode( 'latin,latin-ext' ),
-    		);
-
-    		$fonts_url = add_query_arg( $query_args, 'https://fonts.googleapis.com/css' );
-    	}
-
-    	return esc_url_raw( $fonts_url );
-    }
 
     /**
      * Add preconnect for Google Fonts.
@@ -205,7 +153,12 @@
  */
 
 function clearlyexpressed_scripts(){
+  wp_enqueue_style( 'clearlyexpressed-style', get_stylesheet_uri() );
   wp_enqueue_style( 'main', get_stylesheet_directory_uri() . '/style.css' );
+
+  // Fonts: Fira Sans and Merriweather, https://www.google.com/fonts
+	// wp_enqueue_style( 'clearlyexpressed-google-fonts', '//fonts.googleapis.com/css?family=Terminal+Dosis:400,300,300italic,400italic,500,500italic,600,700,700italic' );
+  wp_enqueue_style( 'clearlyexpressed-google-fonts', '//fonts.googleapis.com/css?family=Terminal+Dosis:600' );
 
   wp_enqueue_script( 'jquery' );
   wp_enqueue_script( 'main', get_stylesheet_directory_uri() . '/js/main.js', $deps = array('jquery'), $ver = false, $in_footer = true );
@@ -284,3 +237,28 @@ function clearlyexpressed_post_thumbnail_sizes_attr( $attr, $attachment, $size )
 	return $attr;
 }
 add_filter( 'wp_get_attachment_image_attributes', 'clearlyexpressed_post_thumbnail_sizes_attr', 10, 3 );
+
+/**
+ * Implement the Custom Header feature.
+ */
+require get_template_directory() . '/inc/custom-header.php';
+
+/**
+ * Custom template tags for this theme.
+ */
+require get_template_directory() . '/inc/template-tags.php';
+
+/**
+ * Custom functions that act independently of the theme templates.
+ */
+require get_template_directory() . '/inc/extras.php';
+
+/**
+ * Customizer additions.
+ */
+require get_template_directory() . '/inc/customizer.php';
+
+/**
+ * Load Jetpack compatibility file.
+ */
+require get_template_directory() . '/inc/jetpack.php';

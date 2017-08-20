@@ -1,12 +1,9 @@
-/* definition der Seite an sich ---------------------------------------------------- */
-
-@import url('https://fonts.googleapis.com/css?family=Terminal+Dosis:600');
 body {
   margin: 0;
   font: normal 12px arial, verdana, tahoma, geneva;
   line-height: 160%;
   color: #000;
-  background-color: white;
+  background-color: #fff;
   text-align: center;
 }
 
@@ -95,7 +92,7 @@ table {
 
 /* IE */
 
-*html #wrapper {
+#wrapper {
   width: 1040px;
 }
 
@@ -110,16 +107,14 @@ table {
   height: 174px;
   margin: 20px;
   padding: 0;
-  border-radius: 30px;
-  border-radius: 30px;
-  border: 1px solid gray;
-  box-shadow: 4px 4px 2px gray;
 }
 
 #header img {
-  left: 30px;
-  top: 60px;
-  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 30px;
+  border: 1px solid gray;
+  box-shadow: 4px 4px 2px gray;
 }
 
 #content {
@@ -148,57 +143,6 @@ table {
   width: 201px;
   height: 110px;
   border: 0px solid black;
-}
-
-
-/* header ----------------------------------------------------------- */
-
-.start {
-  background: url('images/header-start.jpg') no-repeat left top;
-}
-
-.start:hover {
-  background: url('images/header-sageundschreibe.jpg') no-repeat left top;
-}
-
-.uberuns {
-  background: url(images/header-person.jpg) no-repeat left top;
-}
-
-.uberuns:hover {
-  background: url('images/header-sageundschreibe.jpg') no-repeat left top;
-}
-
-.leistungen {
-  background: url(images/header-leistungen.jpg) no-repeat left top;
-}
-
-.leistungen:hover {
-  background: url('images/header-sageundschreibe.jpg') no-repeat left top;
-}
-
-.preise {
-  background: url('images/header-honorar.jpg') no-repeat left top;
-}
-
-.preise:hover {
-  background: url('images/header-sageundschreibe.jpg') no-repeat left top;
-}
-
-.kontakt {
-  background: url('images/header-kontakt.jpg') no-repeat left top;
-}
-
-.kontakt:hover {
-  background: url('images/header-sageundschreibe.jpg') no-repeat left top;
-}
-
-.impressum {
-  background: url('images/header-impressum.jpg') no-repeat left top;
-}
-
-.impressum:hover {
-  background: url('images/header-sageundschreibe.jpg') no-repeat left top;
 }
 
 #toggle {
@@ -278,102 +222,6 @@ table {
   padding-right: 30px;
   padding-bottom: 0;
   padding-left: 30px;
-}
-
-
-/* IE */
-
-*html #inhalt {
-  padding-bottom: 70px;
-}
-
-
-/* IE */
-
-*html #inhalt {
-  width: 485px;
-}
-
-#inhalt p.zitat {
-  font: oblique 12px Georgia, Times New Roman, Times, serif;
-  line-height: 160%;
-  letter-spacing: 0.05em;
-  color: #666;
-}
-
-#inhalt h2:hover {
-  color: #660066;
-}
-
-#inhalt h3:hover {
-  color: #660066;
-}
-
-#inhalt p {
-  width: 485px;
-}
-
-#inhalt h1 {
-  width: 485px;
-  height: 36px;
-}
-
-#inhalt img {
-  border: 0px;
-}
-
-#titel {
-  width: 500px;
-  height: 24px;
-  top: -24px;
-  position: relative;
-  border: 0px solid blue;
-}
-
-#titel.start {
-  background-image: none;
-}
-
-#titel.uberuns {
-  background-image: none;
-}
-
-#titel.leistungen {
-  background-image: none;
-}
-
-#titel.preise {
-  background-image: none;
-}
-
-#titel.kontakt {
-  background-image: none;
-}
-
-#titel.impressum {
-  background-image: none;
-}
-
-.right {
-  float: right;
-  text-align: right;
-  margin: 0 10px 0 10px;
-  padding: 0;
-}
-
-.left {
-  float: left;
-  margin-right: 20px;
-  padding: 0;
-}
-
-#clear {
-  clear: both;
-}
-
-.red {
-  color: #90A3B7;
-  font-weight: bold;
 }
 
 
@@ -593,7 +441,7 @@ table {
   border: 1px solid #d30132;
 }
 
-*html textarea {
+textarea {
   width: 430px;
 }
 

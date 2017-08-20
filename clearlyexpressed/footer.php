@@ -13,7 +13,7 @@
 
 <div id="footer">
   <div class="left">
-    <p>&copy; <?php echo date(Y) . " " . get_bloginfo( 'name' ); ?></p>
+    <p>&copy; <?php echo date('Y') . " " . get_bloginfo( 'name' ); ?></p>
   </div>
   <div class="right">
     <p><a href="credits">Credits</a></p>
