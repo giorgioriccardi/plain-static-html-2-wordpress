@@ -2,9 +2,9 @@
 ## Converting an old plain static html4 site into a wordpress theme/website
 > Some functionalities, such as Contact Form, are replaced using plugins and WP built-in features
 
-Original HTML4 site: [Clearly Expressed Translation Services](https://clearlyexpressed.ca/)
+Original HTML4 site: [Clearly Expressed Translation Services](https://clearlyexpressed.ca/){:target="_blank"}
 
-WordPress 2017 version: [Clearly Expressed 2017 (demo)](https://clearlyexpressed.ca/wordpress)
+WordPress 2017 version: [Clearly Expressed 2017 (demo)](https://clearlyexpressed.ca/wordpress){:target="_blank"}
 
 ## TODO
 - [x] ~~Convert HTML files to basic WP PHP templates~~
