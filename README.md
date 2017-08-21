@@ -16,12 +16,12 @@ WordPress version: [Clearly Expressed 2017 (demo)](https://clearlyexpressed.ca/w
 - [x] ~~Basic SASS and CSS optimization~~
 - [x] ~~Update documentation~~
 - [x] ~~Install WP demo version~~
-[] Responsive Layout
-[] SASS logic and structure
-[] Logo features
-[] Multi-language support and implementation
-[] Footer Widgetss
-[] Review Spaghetti Code
+- [ ] Responsive Layout
+- [ ] SASS logic and structure
+- [ ] Logo features
+- [ ] Multi-language support and implementation
+- [ ] Footer Widgetss
+- [ ] Review Spaghetti Code
 
 ## TIMELINE
 ###### >> 17 August 2017
