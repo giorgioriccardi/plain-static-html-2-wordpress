@@ -58,6 +58,10 @@ typings/
 .env
 
 # sass cache folders and cache files
-.sass-cache
-.sass-cache/
 .sassc
+/node_modules
+/dist
+/.tmp
+/.sass-cache
+.sass-cache
+/bower_component
