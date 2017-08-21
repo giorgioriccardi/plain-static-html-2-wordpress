@@ -30,9 +30,9 @@
 
 	<body>
 		<div id="wrapper">
-			<div class="logo">
+			<!-- <div class="logo">
 				<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
-			</div>
+			</div> -->
 			<div id='header-menu'>
 				<?php
 					/**

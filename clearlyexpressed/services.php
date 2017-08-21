@@ -27,34 +27,4 @@
     <?php get_sidebar( $name = "Right Sidebar" ); ?>
  	</div> <!-- end of #content -->
 
-
-			<div id='leftbar' >
-			<h3>Translating</h3>
-
-				<h2><a href='#translating'>The Art of an Excellent Translation...</a></h2>
-
-				<h2><a href='#standard-texts'>General Texts</a></h2>
-
-				<h2><a href='#technical-texts'>Technical Texts</a></h2>
-
-        <!-- <h2><a href='#urkunden'>Urkunden</a></h2> -->
-
-        <h2><a href='#proofreading'>Proofreading</a></h2>
-		 	</div>
-
-       <div id="sidebar">
-			<h3>Interpreting</h3>
-
-				<h2><a href='#interpreting'>Outstanding Interpreting Services...</a></h2>
-
-				<h2><a href='#simultaneous-interpreting'>Simultaneous Interpreting</a></h2>
-
-				<h2><a href='#consecutive-interpreting'>Consecutive Interpreting</a></h2>
-
-                <h2><a href='#whispered-interpreting'>Whispered Interpreting</a></h2>
-
-                <h2><a href='#liaison-interpreting '>Liaison Interpreting </a></h2>
-
-			</div>
-
 <?php get_footer(); ?>

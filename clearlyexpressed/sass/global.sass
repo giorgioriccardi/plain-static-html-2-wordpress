@@ -1,0 +1,341 @@
+body
+  margin: 0
+  font: normal 12px arial, verdana, tahoma, geneva
+  line-height: 160%
+  color: #000
+  background-color: #fff
+  text-align: center
+
+h1
+  font-family: "Terminal Dosis", sans-serif
+  font-size: 2.7em
+  color: $active-color
+  padding: 0
+  margin: 0
+  border: 0px solid black
+
+h2
+  font-family: "Terminal Dosis", sans-serif
+  font-size: 1.5em
+  padding: 0
+  margin: 0 0 12px 0
+  padding-bottom: 4px
+  border-bottom: dotted 1px $border-grey
+  text-align: right
+
+h4
+  font-family: "Terminal Dosis", sans-serif
+  font-size: 1.5em
+  padding-bottom: 4px
+  border-bottom: dotted 1px $border-grey
+  text-align: right
+  margin-top: 0
+  margin-right: 0
+  margin-bottom: 12px
+  margin-left: 0
+  padding-top: 0
+  padding-right: 0
+  padding-left: 0
+  color: $vivid-title
+
+h3
+  font-family: "Terminal Dosis", sans-serif
+  font-size: 1.9em
+  padding: 0
+  margin: 0 0 12px 0
+  padding-bottom: 4px
+  border-bottom: dotted 1px $border-grey
+  text-align: left
+  color: $vivid-title
+
+p
+  margin: 0 0 12px 0
+  padding: 0
+
+a
+  color: $active-color
+  text-decoration: none
+  font-weight: bold
+
+  &:hover
+    text-decoration: underline
+
+table
+  font: normal 1em Arial, Verdana, Tahoma
+  background-color: transparent
+  margin: 0
+  padding: 0
+
+#wrapper
+  width: 960px
+  margin-right: auto
+  margin-left: auto
+  text-align: left
+  overflow: hidden
+  border-radius: 30px
+  border-radius: 30px
+  margin-top: 30px
+  margin-bottom: 30px
+  padding: 30px
+  border: 10px solid $active-color
+
+/* menu
+
+#header-menu .menu-item
+  list-style: none
+
+.current-menu-item a
+  color: $active-color !important
+
+/* sidebars
+
+.widget_media_audio h2
+  display: inline-block !important
+  padding-top: 1em
+  padding-bottom: 1em
+
+aside
+  &#primary
+    float: left
+    max-width: 25%
+
+  &#secondary
+    float: right
+    max-width: 25%
+
+  section#text-9
+    margin-bottom: 250px
+
+#header-menu
+  clear: both
+  overflow: hidden
+  width: 960px
+
+#header
+  width: 920px
+  height: 174px
+  margin: 20px
+  padding: 0
+
+  img
+    max-width: 100%
+    max-height: 100%
+    border-radius: 30px
+    border: 1px solid gray
+    box-shadow: 4px 4px 2px gray
+
+#content
+  overflow: hidden
+  width: 960px
+  margin: 0
+  padding: 0
+  background-color: transparent
+
+#footer
+  clear: both
+  width: 960px
+  height: 24px
+  margin-top: 20px
+  padding-top: 10px
+  border-top: 1px solid #e3dddb
+
+#logo
+  left: 730px
+  top: -20px
+  position: relative
+  padding: 0px
+  margin: 0px
+  width: 201px
+  height: 110px
+  border: 0px solid black
+
+  h1
+    padding: 0 0.3em
+
+#toggle
+  float: right
+  margin: 0
+
+  a
+    color: #000
+    text-decoration: none
+
+    &:hover
+      color: $vivid-title
+
+    &.aktiv
+      font-weight: bold
+
+/* Menu -----------------------------------------------------------
+
+#menu
+  float: left
+  padding-right: 30px
+  padding-left: 0px !important
+  position: relative
+  font-family: "Terminal Dosis", sans-serif
+  font-size: 2em
+  overflow: hidden
+
+  ul
+    list-style: none
+    padding: 0px
+    margin: 0
+    border: 0px solid black
+
+  li
+    float: left
+    height: 1.5em
+    line-height: 1.2em
+    border-bottom: 0px solid #fff
+
+    a
+      padding: 0 0 0 0.5em
+      margin: 0
+      color: #000
+      font-weight: bold
+      text-decoration: none
+      border: 0px solid black
+
+      &:hover
+        display: inline
+        color: $vivid-title
+
+      &.aktiv
+        color: $active-color
+
+        /*padding: 0 0 0 .5em;
+
+/* Seiteninhalt --------------------------------------------------------------------
+
+#inhalt
+  top: 24px
+  position: relative
+  float: left
+  width: 475px
+  margin-bottom: 70px
+  background-color: transparent
+  padding-top: 0
+  padding-right: 30px
+  padding-bottom: 0
+  padding-left: 30px
+
+  h1
+    margin-bottom: 1em
+
+/* Sidebar ---------------------------------------------
+
+aside h2.widget-title
+  display: none
+
+#sidebar, #leftbar
+  top: 20px
+  position: relative
+  float: right
+  width: 190px
+  border: 0px solid #000
+  padding-top: 0
+  padding-right: 0px
+  padding-bottom: 0
+
+#sidebar
+  border-left: solid $border-grey 1px
+  padding-left: 20px
+
+#sidebar-contacts-webdesign
+  top: 20px
+  position: relative
+  float: right
+  width: 220px
+  border: 0px solid #000
+  border-left: solid $border-grey 1px
+  padding-top: 0
+  padding-right: 0px
+  padding-bottom: 0
+  padding-left: 40px
+
+#sidebar h4:hover, #leftbar h4:hover
+  color: $vivid-title
+
+#sidebar ul, #leftbar ul
+  margin: 9px 0 24px 12px
+  padding: 0
+  list-style: none
+
+#sidebar ul li, #leftbar ul li
+  border-top: 1px solid $border-grey
+  color: #878F96
+  display: block
+  font-weight: normal
+  padding: 0.3em 0
+
+#sidebar h2, #leftbar h2
+  font: normal 12px arial, verdana, tahoma, geneva
+  color: $active-color
+  font-size: 1em
+  font-weight: bold
+  margin: 0 0 0.7em
+  text-decoration: none
+  border-bottom: none
+  text-align: left
+
+#sidebar p, #leftbar p
+  color: #666
+
+/* footer ----------------------------------------------------------
+
+#footer
+  div
+    height: 24px
+    margin: 0 20px
+
+  p
+    font-size: 0.9em
+    padding: 0
+    margin: 0
+
+    a
+      text-decoration: underline
+      color: #909090
+
+      &:hover
+        color: #000
+
+/* ---- preise table ---
+
+.preise-table
+  margin-bottom: 1em
+  width: 550px
+  _border-collapse: collapse
+  border: solid 1px $active-color
+  border-radius: 4px
+  border-radius: 4px
+
+  th
+    padding: 1em
+    color: white
+    background-color: $active-color
+    letter-spacing: 1.5px
+    text-align: center
+
+  td
+    padding: 1em
+    _border: solid 1px $active-color
+    text-align: left
+
+.border-right-white
+  border-right: solid 1px white
+
+.border-right-color
+  border-right: solid 1px $active-color
+
+.border-bottom-color
+  border-bottom: solid 1px $active-color
+
+.rounded-tr
+  border-top-right-radius: 4px
+
+.rounded-tl
+  border-top-left-radius: 4px
+
+
