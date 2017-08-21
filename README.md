@@ -3,7 +3,8 @@
 > Some functionalities, such as Contact Form, are replaced using plugins and WP built-in features
 
 Original HTML4 site: [Clearly Expressed Translation Services](https://clearlyexpressed.ca/)
-WordPress version: [Clearly Expressed 2017 (demo)](https://clearlyexpressed.ca/wordpress)
+
+WordPress 2017 version: [Clearly Expressed 2017 (demo)](https://clearlyexpressed.ca/wordpress)
 
 ## TODO
 - [x] ~~Convert HTML files to basic WP PHP templates~~
@@ -20,7 +21,8 @@ WordPress version: [Clearly Expressed 2017 (demo)](https://clearlyexpressed.ca/w
 - [ ] SASS logic and structure
 - [ ] Logo features
 - [ ] Multi-language support and implementation
-- [ ] Footer Widgetss
+- [ ] Multi Admin installation for EN/DE version
+- [ ] Footer Widgets
 - [ ] Review Spaghetti Code
 
 ## TIMELINE
