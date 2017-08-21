@@ -15,9 +15,6 @@
   <div class="left">
     <p>&copy; <?php echo date('Y') . " " . get_bloginfo( 'name' ); ?></p>
   </div>
-  <div class="right">
-    <p><a href="credits">Credits</a></p>
-  </div>
 </div>
 </div>
 

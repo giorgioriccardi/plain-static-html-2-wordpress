@@ -27,13 +27,4 @@
     <?php get_sidebar( $name = "Right Sidebar" ); ?>
  	</div> <!-- end of #content -->
 
-				<div id="sidebar">
-				    <h2>Frischmann &amp; Lachmann</h2>
-					<p>Ph: <a href="tel:+1 604 329 9622">+1 604 329 9622</a>
-						<br>E-Mail: <a href="mailto:info@clearlyexpressed.ca">info@clearlyexpressed.ca</a>
-					</p>
-					<p>All fields marked with an asterisk <strong>(*)</strong> are required.</p>
-
-				</div>
-
 <?php get_footer(); ?>

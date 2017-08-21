@@ -27,10 +27,4 @@
     <?php get_sidebar( $name = "Right Sidebar" ); ?>
  	</div> <!-- end of #content -->
 
-            <div id="sidebar">
-		    <h2>Affordable Rates</h2>
-				<p>Compared to other companies in the Vancouver area, our pricing is one of the most competitive in the translation industry. Our rates for translations start from $35.00 per document, depending on the size and complexity of the content. <p>We do not have any hidden charges and never change the price once it has been given as long as the source material stays the same.</p> <p>For a detailed quote, please <a href="contact">contact us</a>.</p>
-
-			</div>
-
 <?php get_footer(); ?>
