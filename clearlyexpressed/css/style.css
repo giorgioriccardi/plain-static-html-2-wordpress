@@ -3,7 +3,7 @@ body {
   font: normal 12px arial, verdana, tahoma, geneva;
   line-height: 160%;
   color: #000;
-  background-color: #fff;
+  background-color: #ffffff;
   text-align: center; }
 
 h1 {
@@ -173,7 +173,7 @@ aside section#text-9 {
     float: left;
     height: 1.5em;
     line-height: 1.2em;
-    border-bottom: 0px solid #fff; }
+    border-bottom: 0px solid #ffffff; }
     #menu li a {
       padding: 0 0 0 0.5em;
       margin: 0;
