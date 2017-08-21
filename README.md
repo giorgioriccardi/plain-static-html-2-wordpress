@@ -16,12 +16,12 @@ WordPress version: [Clearly Expressed 2017 (demo)](https://clearlyexpressed.ca/w
 - [x] ~~Basic SASS and CSS optimization~~
 - [x] ~~Update documentation~~
 - [x] ~~Install WP demo version~~
-- [] Responsive Layout
-- [] SASS logic and structure
-- [] Logo features
-- [] Multi-language support and implementation
-- [] Footer Widgetss
-- [] Review Spaghetti Code
+[] Responsive Layout
+[] SASS logic and structure
+[] Logo features
+[] Multi-language support and implementation
+[] Footer Widgetss
+[] Review Spaghetti Code
 
 ## TIMELINE
 ###### >> 17 August 2017
@@ -114,3 +114,8 @@ Widget Dynamic Plugin used to select sidebar sections.
 Contact Form replaced hard coded form in Contact Us.
 Media items now displayed via Audio Widgets in the sidebar.
 **SASS**: first round of cleaning/organizing styles.
+
+###### >> 21 August 2017
+
+Update readme.md.
+Corrected few items according to theme checker.
