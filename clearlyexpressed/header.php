@@ -10,10 +10,9 @@
  */
 
 ?><!DOCTYPE html>
-<!-- <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> -->
 <html <?php language_attributes(); ?>>
 <head>
-	<title><?php bloginfo( "name" ); ?></title>
+	<title><?php bloginfo( 'name' ); ?><?php wp_title(); ?></title>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="description" content="<?php bloginfo("description"); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,9 +29,6 @@
 
 	<body>
 		<div id="wrapper">
-			<!-- <div class="logo">
-				<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
-			</div> -->
 			<div id='header-menu'>
 				<?php
 					/**
@@ -41,10 +37,10 @@
 					 * @since 3.0.0
 					 */
 					$defaults = array(
-						'theme_location' => 'primary',
-						'container' => 'div',
-						'menu_class' => '',
-						'menu_id' => 'menu'
+						'theme_location' 	=> 'primary',
+						'container' 			=> 'div',
+						'menu_class' 			=> '',
+						'menu_id' 				=> 'menu'
 					);
 
 					wp_nav_menu( $defaults );

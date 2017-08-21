@@ -302,7 +302,7 @@ add_filter( 'the_content_more_link', 'clearlyexpressed_modify_read_more_link' );
  * Customize ellipsis at end of excerpts
  */
 function clearlyexpressed_excerpt_more( $more ) {
-	return "…";
+	return "...";
 }
 add_filter('excerpt_more', 'clearlyexpressed_excerpt_more');
 
