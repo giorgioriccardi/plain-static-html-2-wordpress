@@ -5,7 +5,7 @@
 Original HTML4 site: [Clearly Expressed Translation Services](https://sageundschreibe.eu/)
 
 ~~WordPress 2017 version: [Clearly Expressed 2017 (demo)](https://clearlyexpressed.ca/wordpress)~~
-WordPress 2019 version: [Clearly Expressed 2017 (production)](https://clearlyexpressed.ca/)
+WordPress 2019 version: [Clearly Expressed 2019 (production)](https://clearlyexpressed.ca/)
 
 ## TODO
 - [x] ~~Convert HTML files to basic WP PHP templates~~
