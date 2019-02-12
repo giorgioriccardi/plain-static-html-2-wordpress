@@ -19,8 +19,8 @@ WordPress 2019 version: [Clearly Expressed 2019 (production)](https://clearlyexp
 - [x] ~~Update documentation~~
 - [x] ~~Install WP demo version~~
 - [ ] Responsive Layout
-- [ ] SASS logic and structure
-- [ ] Logo features
+- [x] SASS logic and structure
+- [ ] Logo feature
 - [ ] Multi-language support and implementation
 - [ ] Multi Admin installation for EN/DE version
 - [ ] Footer Widgets
